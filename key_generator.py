@@ -18,6 +18,8 @@ if confirmation == 'y':
 
     cursor.execute('''INSERT INTO KEY(Key) VALUES (?)''',(k,))
     os.remove('passwords.csv')
+    print("New Key is generated...")
+    print("All your old passwords are deleted")
     
 else :
     print('Your key is still the same')
